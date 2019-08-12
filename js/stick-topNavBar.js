@@ -9,12 +9,18 @@
         bindEvents: function () {
             window.addEventListener('scroll', () => {
                 if (scrollY > 0) {
-                    this.view.classList.add('active')
+                    this.active()
                 }
                 else {
-                    this.view.classList.remove('active')
+                    this.remove()
                 }
             })
+        },
+        active: function () {
+            this.view.classList.add('active')
+        },
+        remove: function () {
+            this.view.classList.remove('active')
         }
     }
     controller.init(view)
