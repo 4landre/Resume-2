@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人简历</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://at.alicdn.com/t/font_1118259_0h77d3fc8fof.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="topNavBar">
+        <div id="topNavBarStick" class="topNavBar-inner  clearfix">
+            <a class="logo" href="#" alt="logo">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#siteAboutMe">关于</a></li>
+                    <li><a href="#siteSkills">技能</a></li>
+                    <li><a href="#siteWorks">作品</a>
+                        <ul class="ulMenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">博客</a>
+                        <ul class="ulMenu">
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div data-x id="siteAboutMe" class="mycard offset">
+            <div class="aboutmeAndPicture clearfix">
+                <div class="picture">
+                    <img src="https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/11/startuper-1-299x347.jpg"
+                        alt="头像">
+                </div>
+                <div class="aboutme">
+                    <span class="welcome">HELLO
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>田永吉</h1>
+                    <h2>前端开发工程师</h2>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>28</dd>
+                        <dt>所在城市</dt>
+                        <dd>四川成都</dd>
+                        <dt>邮箱</dt>
+                        <dd>450****51@qq.com</dd>
+                        <dt>手机</dt>
+                        <dd>189****0936</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-jirengulogojichu3"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <div class="downloadAndMe">
+            <a class="download" href="" target="_blank" download>下载PDF简历</a>
+            <p class="me">我是田永吉，初级前端开发工程师，写代码使我快乐！</p>
+        </div>
+    </main>
+    <section data-x id="siteSkills" class="skills">
+        <h1>技能</h1>
+        <ol class="skillList clearfix">
+            <li>HTML5 &amp; CSS3
+                <div class="skillbar">
+                    <div class="loading" style="width: 80%" ;></div>
+                </div>
+            </li>
+            <li>Javascript
+                <div class="skillbar">
+                    <div class="loading" style="width: 50%" ;></div>
+                </div>
+            </li>
+            <li>jQuary
+                <div class="skillbar">
+                    <div class="loading" style="width: 35%" ;></div>
+                </div>
+            </li>
+            <li>Vue
+                <div class="skillbar">
+                    <div class="loading" style="width: 20%" ;></div>
+                </div>
+            </li>
+            <li>React
+                <div class="skillbar">
+                    <div class="loading" style="width: 10%" ;></div>
+                </div>
+            </li>
+            <li>HTTP
+                <div class="skillbar">
+                    <div class="loading" style="width: 70%" ;></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section data-x id="siteWorks" class="portfolio">
+        <h1>作品集</h1>
+        <div class="swiper">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/nav.jpg" alt="nav">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/canvas.jpg" alt="canvas">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slides.jpg" alt="slides">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    <script src="./js/offset-init.js"></script>
+    <script src="./js/stick-topNavBar.js"></script>
+    <script src="./js/auto-skipToNav.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+
+</html>
