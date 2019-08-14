@@ -8,6 +8,8 @@
     <script src="https://at.alicdn.com/t/font_1118259_0h77d3fc8fof.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -151,12 +153,28 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
+
+    <div id="messageBoard" class="messageBoard">
+        <h1>留言板</h1>
+        <div class="form">
+            <ul id="messagesList" class="messagesList">
+
+            </ul>
+            <form id="userMessageForm" action="post">
+                <input id="userName" class="userName" type="text" name="content" placeholder="姓名">
+                <input id="messageValue" class="messageValue" type="text" name="content" placeholder="说点什么......">
+                <input class="submit" type="submit" value="发布">
+            </form>
+        </div>
+    </div>
+
+
     <script src="./js/offset-init.js"></script>
     <script src="./js/stick-topNavBar.js"></script>
     <script src="./js/auto-skipToNav.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/leancloud.js"></script>
 </body>
 
 </html>

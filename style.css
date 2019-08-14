@@ -389,3 +389,64 @@ dd {
     width: 940px;
     height: 705px;
 }
+
+/* messageBoard */
+
+.messageBoard {
+    margin: 40px auto;
+}
+
+.messageBoard h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.messageBoard .form ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    background: rgb(255, 255, 255);
+}
+
+.messageBoard .form ul li {
+    padding: 5px 15px;
+    border-bottom: 1px solid rgb(246, 246, 246);
+}
+
+.messageBoard .form {
+    width: 940px;
+    margin: 0px auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.messageBoard .form form {
+    margin-block-end: 0;
+    height: 60px;
+}
+
+.messageBoard .form form input {
+    height: 40px;
+    margin: 10px auto;
+}
+
+.messageBoard .form form .userName {
+    width: 80px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.messageBoard .form form .messageValue {
+    width: 750px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.messageBoard .form form .submit {
+    width: 64px;
+    background-color: rgb(232, 103, 107);
+    border: none;
+    border-radius: 5px;
+}
